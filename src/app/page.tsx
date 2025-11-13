@@ -1,10 +1,11 @@
-import Hero from "@/components/Hero";
+import Main from "@/components/Main";
+import Works from "@/components/Works";
 
 export default function HomePage() {
   return (
       <>
-        <Hero />
-        {/* 下面可以接 Works / CTA */}
+        <Main />
+        <Works />
       </>
   );
 }
