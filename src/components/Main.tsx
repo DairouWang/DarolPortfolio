@@ -7,8 +7,8 @@ export default function Main() {
             <div className="max-w-3xl px-4 sm:px-6 lg:px-8 text-center sm:text-left">
                 <p className="text-lg sm:text-xl font-light mb-4">Software Developer | Psychology & MPA background | Crafting user-centric products | Woman in Tech | Empathy-driven design | Photographer, Snowboarding/Skiing, Badminton Enthusiast</p>
             </div>
-            <div className="absolute top-1/3 w-full overflow-hidden">
-                <div className="text-white text-[300px] font-medium whitespace-nowrap animate-marquee">
+            <div className="absolute top-1/3 h-32 w-full overflow-hidden">
+                <div className="text-white text-8xl font-medium whitespace-nowrap animate-marquee">
                     Creative Developer & Designer
                 </div>
             </div>
