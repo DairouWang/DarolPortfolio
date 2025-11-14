@@ -1,18 +1,18 @@
 export default function AboutMe() {
     return (
         <section className="w-full min-h-screen bg-[#F5EBE0] flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 py-24">
-            {/* 标题区域 */}
+            {/* Title Section */}
             <div className="max-w-6xl w-full mb-20 text-center">
                 <h2 className="text-6xl sm:text-7xl md:text-8xl font-serif font-light text-[#E07A5F] mb-8 tracking-wide">
                     ABOUT ME
                 </h2>
             </div>
 
-            {/* 三个卡片 */}
+            {/* Three Cards */}
             <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
                 {/* Card 1: Why I Build */}
                 <div className="flex flex-col items-center text-center gap-8">
-                    {/* 图标 */}
+                    {/* Icon */}
                     <div className="w-28 h-28 flex items-center justify-center mb-6">
                         <div className="relative">
                             <div className="absolute inset-0 bg-[#E07A5F] rounded-full blur-xl opacity-30"></div>
@@ -36,7 +36,7 @@ export default function AboutMe() {
 
                 {/* Card 2: What I Bring */}
                 <div className="flex flex-col items-center text-center gap-8">
-                    {/* 图标 */}
+                    {/* Icon */}
                     <div className="w-28 h-28 flex items-center justify-center mb-6">
                         <div className="relative">
                             <div className="absolute inset-0 bg-[#F4A261] rounded-full blur-xl opacity-30"></div>
@@ -65,7 +65,7 @@ export default function AboutMe() {
 
                 {/* Card 3: Woman in Tech, With Purpose */}
                 <div className="flex flex-col items-center text-center gap-8">
-                    {/* 图标 */}
+                    {/* Icon */}
                     <div className="w-28 h-28 flex items-center justify-center mb-6">
                         <div className="relative">
                             <div className="absolute inset-0 bg-[#81B4CE] rounded-full blur-xl opacity-30"></div>
