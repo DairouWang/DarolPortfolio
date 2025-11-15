@@ -34,7 +34,7 @@ export default function Works() {
     const titleInView = useInView(titleRef, { once: true, margin: "-100px" });
 
     return (
-        <section className="w-full min-h-screen bg-[#FAFAFA] flex flex-col justify-center items-start px-[200px] py-36">
+        <section id="works" className="w-full min-h-screen bg-[#FAFAFA] flex flex-col justify-center items-start px-[200px] py-36">
             <div className="w-full">
                 {/* Title Section */}
                 <motion.div 

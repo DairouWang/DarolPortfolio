@@ -11,6 +11,7 @@ export default function Footer() {
     return (
         <motion.footer 
             ref={footerRef}
+            id="contact"
             className="w-full bg-[#2c3e50] text-white"
             initial={{ opacity: 0 }}
             animate={footerInView ? { opacity: 1 } : { opacity: 0 }}

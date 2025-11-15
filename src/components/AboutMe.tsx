@@ -9,7 +9,7 @@ export default function AboutMe() {
     const titleInView = useInView(titleRef, { once: true, margin: "-100px" });
 
     return (
-        <section className="w-full bg-[#eaeaee] flex flex-col items-center px-4 sm:px-6 lg:px-8 py-48">
+        <section id="about" className="w-full bg-[#eaeaee] flex flex-col items-center px-4 sm:px-6 lg:px-8 py-48">
             {/* Title Section */}
             <motion.div 
                 ref={titleRef}
