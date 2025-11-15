@@ -1,16 +1,32 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+
 export default function AboutMe() {
+    const titleRef = useRef(null);
+    const titleInView = useInView(titleRef, { once: true, margin: "-100px" });
+
     return (
         <section className="w-full bg-[#eaeaee] flex flex-col items-center px-4 sm:px-6 lg:px-8 py-48">
             {/* Title Section */}
-            <div className="max-w-6xl w-full mb-12 text-center">
+            <motion.div 
+                ref={titleRef}
+                className="max-w-6xl w-full mb-12 text-center"
+                initial={{ opacity: 0, y: 50 }}
+                animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
                 <h2 className="text-6xl sm:text-7xl md:text-8xl font-serif font-light text-[#1471af] mb-8 tracking-wide">
                     ABOUT ME
                 </h2>
-            </div>
+            </motion.div>
 
             {/* Three Cards */}
             <div className="max-w-[1920px] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-32 lg:gap-48 xl:gap-64 px-8">
                 {/* Card 1: Why I Build */}
+                <CardWithAnimation delay={0}>
                 <div className="flex flex-col items-center text-center gap-8">
                     {/* Icon */}
                     <div className="w-28 h-28 flex items-center justify-center mb-6">
@@ -33,8 +49,10 @@ export default function AboutMe() {
                         </p>
                     </div>
                 </div>
+                </CardWithAnimation>
 
                 {/* Card 2: What I Bring */}
+                <CardWithAnimation delay={0.2}>
                 <div className="flex flex-col items-center text-center gap-8">
                     {/* Icon */}
                     <div className="w-28 h-28 flex items-center justify-center mb-6">
@@ -62,8 +80,10 @@ export default function AboutMe() {
                         </p>
                     </div>
                 </div>
+                </CardWithAnimation>
 
                 {/* Card 3: Woman in Tech, With Purpose */}
+                <CardWithAnimation delay={0.4}>
                 <div className="flex flex-col items-center text-center gap-8">
                     {/* Icon */}
                     <div className="w-28 h-28 flex items-center justify-center mb-6">
@@ -86,8 +106,29 @@ export default function AboutMe() {
                         </p>
                     </div>
                 </div>
+                </CardWithAnimation>
             </div>
         </section>
     );
 }
 
+// Card wrapper component with animation
+function CardWithAnimation({ children, delay }: { children: React.ReactNode; delay: number }) {
+    const cardRef = useRef(null);
+    const cardInView = useInView(cardRef, { once: true, margin: "-100px" });
+
+    return (
+        <motion.div
+            ref={cardRef}
+            initial={{ opacity: 0, y: 60, scale: 0.95 }}
+            animate={cardInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 60, scale: 0.95 }}
+            transition={{ duration: 0.7, delay, ease: "easeOut" }}
+            whileHover={{ 
+                y: -10, 
+                transition: { duration: 0.3, ease: "easeOut" }
+            }}
+        >
+            {children}
+        </motion.div>
+    );
+}
