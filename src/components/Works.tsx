@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -12,6 +13,7 @@ const projects = [
         description: "Diet Dice is an AI-powered meal decision tool designed to reduce decision fatigue and help users choose healthier meals in seconds. Using behavioral insights and probabilistic selection, it turns everyday meal planning into a guided, delightful experience.",
         image: "/diet-dice-cover.png",
         color: "#f9674d",
+        link: "/projects/diet-dice",
     },
     {
         id: 2,
@@ -19,13 +21,15 @@ const projects = [
         description: "Mind Reader is a scalable ML platform that analyzes text through multiple models—classical ML, Transformers, and custom pipelines—to generate insights such as sentiment, classification, and feature importance.",
         image: "/mind-reader-cover.png",
         color: "#f6ad56",
+        link: "/projects/mind-reader",
     },
     {
         id: 3,
         title: "Pet MBTI Test",
-        description: "A playful, psychology-inspired web application that helps pet owners discover their pet’s “MBTI-style” personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.",
+        description: "A playful, psychology-inspired web application that helps pet owners discover their pet's \"MBTI-style\" personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.",
         image: "/pet-mbti-cover.png",
         color: "#1471af",
+        link: "/projects/pet-mbti",
     },
 ];
 
@@ -75,18 +79,14 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
     const cardInView = useInView(cardRef, { once: true, margin: "-100px" });
 
     return (
-        <motion.a
-            ref={cardRef}
-            href="#"
-            className="group cursor-pointer"
-            initial={{ opacity: 0, y: 80 }}
-            animate={cardInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 80 }}
-            transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
-            onClick={(e) => {
-                e.preventDefault();
-                console.log(`Clicked on ${project.title}`);
-            }}
-        >
+        <Link href={project.link}>
+            <motion.div
+                ref={cardRef}
+                className="group cursor-pointer"
+                initial={{ opacity: 0, y: 80 }}
+                animate={cardInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 80 }}
+                transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
+            >
             <div className={`flex gap-10 items-center ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}>
                 {/* Image */}
                 <motion.div 
@@ -134,7 +134,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
                     </div>
                 </div>
             </div>
-        </motion.a>
+            </motion.div>
+        </Link>
     );
 }
 
