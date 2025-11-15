@@ -6,29 +6,29 @@ const projects = [
     {
         id: 1,
         title: "Diet Dice",
-        description: "AI-powered meal decision tool",
-        image: "https://placehold.co/807x470/E07A5F/FFFFFF?text=Diet+Dice",
+        description: "Diet Dice is an AI-powered meal decision tool designed to reduce decision fatigue and help users choose healthier meals in seconds. Using behavioral insights and probabilistic selection, it turns everyday meal planning into a guided, delightful experience.",
+        image: "/diet-dice-cover.png",
         color: "#E07A5F",
     },
     {
         id: 2,
         title: "Mind Reader",
-        description: "Multi-model text intelligence",
-        image: "https://placehold.co/807x470/F4A261/FFFFFF?text=Mind+Reader",
+        description: "Mind Reader is a scalable ML platform that analyzes text through multiple models—classical ML, Transformers, and custom pipelines—to generate insights such as sentiment, classification, and feature importance.",
+        image: "/mind-reader-cover.png",
         color: "#F4A261",
     },
     {
         id: 3,
         title: "Pet MBTI Test",
-        description: "Personality test for pets",
-        image: "https://placehold.co/807x470/81B4CE/FFFFFF?text=Pet+MBTI",
+        description: "A playful, psychology-inspired web application that helps pet owners discover their pet’s “MBTI-style” personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.",
+        image: "/pet-mbti-cover.png",
         color: "#81B4CE",
     },
 ];
 
 export default function Works() {
     return (
-        <section className="w-full min-h-screen bg-[#FAFAFA] flex flex-col justify-center items-start px-[133px] py-24">
+        <section className="w-full min-h-screen bg-[#FAFAFA] flex flex-col justify-center items-start px-[200px] py-36">
             <div className="w-full">
                 {/* Title Section */}
                 <div className="flex justify-between items-start mb-16 w-full">
@@ -69,11 +69,11 @@ export default function Works() {
 
                                 {/* Content - Title, Description and View Details */}
                                 <div className="w-1/2 flex flex-col gap-4">
-                                    <div>
-                                        <h3 className="text-4xl md:text-5xl font-normal text-black mb-3 transition-colors duration-300 group-hover:text-[var(--project-color)]" style={{ '--project-color': project.color } as React.CSSProperties}>
+                                    <div className="flex flex-col text-left">
+                                        <h3 className="text-5xl md:text-6xl font-normal text-black mb-4 leading-[1.1] transition-colors duration-300 group-hover:text-[var(--project-color)] m-0 p-0 text-left w-full" style={{ '--project-color': project.color } as React.CSSProperties}>
                                             {project.title}
                                         </h3>
-                                        <p className="text-lg md:text-xl font-light text-gray-600">
+                                        <p className="text-xl md:text-2xl font-light text-gray-600 leading-[1.6] m-0 p-1 text-left w-full">
                                             {project.description}
                                         </p>
                                     </div>
@@ -81,7 +81,7 @@ export default function Works() {
                                     {/* View Details - appears on hover */}
                                     <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-2">
                                         <span 
-                                            className="text-sm font-medium tracking-wider uppercase whitespace-nowrap"
+                                            className="text-base font-medium tracking-wider uppercase whitespace-nowrap"
                                             style={{ color: project.color }}
                                         >
                                             View Details
