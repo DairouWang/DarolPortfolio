@@ -8,7 +8,7 @@ const projects = [
         title: "Diet Dice",
         description: "Diet Dice is an AI-powered meal decision tool designed to reduce decision fatigue and help users choose healthier meals in seconds. Using behavioral insights and probabilistic selection, it turns everyday meal planning into a guided, delightful experience.",
         image: "/diet-dice-cover.png",
-        color: "#E07A5F",
+        color: "#f9674d",
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const projects = [
         title: "Pet MBTI Test",
         description: "A playful, psychology-inspired web application that helps pet owners discover their pet’s “MBTI-style” personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.",
         image: "/pet-mbti-cover.png",
-        color: "#81B4CE",
+        color: "#1471af",
     },
 ];
 
