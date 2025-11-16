@@ -79,7 +79,7 @@ export default function PetMBTIPage() {
                     delay={0.3}
                 >
                     <p className="text-2xl text-gray-700 leading-relaxed">
-                        A playful, psychology-inspired web application that helps pet owners discover their pet's "MBTI-style" personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.
+                        A playful, psychology-inspired web application that helps pet owners discover their pet&apos;s &quot;MBTI-style&quot; personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.
                     </p>
                 </ContentSection>
 
