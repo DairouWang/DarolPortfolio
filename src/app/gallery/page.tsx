@@ -48,7 +48,7 @@ export default function GalleryPage() {
             <div className="pt-32 pb-20 px-12 max-w-[1800px] mx-auto">
 
                 {/* Grid Container - Custom scattered positions */}
-                <div className="relative w-full" style={{ minHeight: '2400px' }}>
+                <div className="relative w-full" style={{ minHeight: '3800px' }}>
                     {/* Image 1 - Top Left */}
                     <motion.div
                         className="absolute"
@@ -58,15 +58,16 @@ export default function GalleryPage() {
                             width: '45%',
                             maxWidth: '600px'
                         }}
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 1.3 }}
                     >
-                        <div className="relative w-full aspect-[4/5] overflow-hidden group cursor-pointer">
+                        <div className="relative w-full overflow-hidden group cursor-pointer">
                             <img
-                                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&h=1500&fit=crop"
+                                src="/IMG_0615.jpg"
                                 alt="Gallery Image 1"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                     </motion.div>
@@ -75,20 +76,21 @@ export default function GalleryPage() {
                     <motion.div
                         className="absolute"
                         style={{
-                            top: '200px',
-                            right: '0px',
+                            top: '400px',
+                            right: '5%',
                             width: '40%',
                             maxWidth: '550px'
                         }}
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 1.3 }}
                     >
-                        <div className="relative w-full aspect-[3/4] overflow-hidden group cursor-pointer">
+                        <div className="relative w-full overflow-hidden group cursor-pointer">
                             <img
-                                src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1200&h=1600&fit=crop"
+                                src="/IMG_1426.jpg"
                                 alt="Gallery Image 2"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                     </motion.div>
@@ -97,20 +99,21 @@ export default function GalleryPage() {
                     <motion.div
                         className="absolute"
                         style={{
-                            top: '800px',
-                            left: '5%',
-                            width: '35%',
-                            maxWidth: '500px'
+                            top: '1100px',
+                            left: '0%',
+                            width: '55%',
+                            maxWidth: '750px'
                         }}
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.3 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 1.3 }}
                     >
-                        <div className="relative w-full aspect-[5/4] overflow-hidden group cursor-pointer">
+                        <div className="relative w-full overflow-hidden group cursor-pointer">
                             <img
-                                src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=1400&h=1100&fit=crop"
+                                src="/IMG_4532.jpg"
                                 alt="Gallery Image 3"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                     </motion.div>
@@ -119,20 +122,21 @@ export default function GalleryPage() {
                     <motion.div
                         className="absolute"
                         style={{
-                            top: '1100px',
-                            right: '8%',
-                            width: '42%',
-                            maxWidth: '580px'
+                            top: '1800px',
+                            right: '5%',
+                            width: '60%',
+                            maxWidth: '850px'
                         }}
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 1.3 }}
                     >
-                        <div className="relative w-full aspect-[4/5] overflow-hidden group cursor-pointer">
+                        <div className="relative w-full overflow-hidden group cursor-pointer">
                             <img
-                                src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=1200&h=1500&fit=crop"
+                                src="/IMG_5044.jpg"
                                 alt="Gallery Image 4"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                     </motion.div>
@@ -141,20 +145,21 @@ export default function GalleryPage() {
                     <motion.div
                         className="absolute"
                         style={{
-                            top: '1800px',
-                            left: '15%',
+                            top: '2600px',
+                            left: '10%',
                             width: '48%',
                             maxWidth: '650px'
                         }}
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.5 }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 1.3 }}
                     >
-                        <div className="relative w-full aspect-[16/10] overflow-hidden group cursor-pointer">
+                        <div className="relative w-full overflow-hidden group cursor-pointer">
                             <img
-                                src="https://images.unsplash.com/photo-1551732998-9ed98c11ca34?w=1600&h=1000&fit=crop"
+                                src="/IMG_7633.jpg"
                                 alt="Gallery Image 5"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                     </motion.div>
