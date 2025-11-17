@@ -10,17 +10,17 @@ export default function GalleryPage() {
         <main className="min-h-screen bg-white">
             {/* Top Navigation - Minimal */}
             <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
-                <div className="flex justify-between items-center px-8 py-5">
+                <div className="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 sm:py-5">
                     {/* Logo/Name */}
                     <Link 
                         href="/"
-                        className="text-xl font-light text-gray-800 hover:text-gray-500 transition-colors duration-300"
+                        className="text-base sm:text-lg md:text-xl font-light text-gray-800 hover:text-gray-500 transition-colors duration-300"
                     >
                         Dairou&apos;s Gallery
                     </Link>
 
                     {/* Right Side - About & Instagram */}
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-center gap-3 sm:gap-4 md:gap-5">
                         <Link
                             href="/gallery/about"
                             className="text-sm font-light text-gray-600 hover:text-black transition-colors duration-300"
@@ -45,10 +45,10 @@ export default function GalleryPage() {
             </nav>
 
             {/* Gallery Grid - Scattered Layout */}
-            <div className="pt-24 pb-13 px-8 max-w-[1200px] mx-auto">
+            <div className="pt-20 sm:pt-24 pb-8 sm:pb-13 px-4 sm:px-6 md:px-8 max-w-[1200px] mx-auto">
 
-                {/* Grid Container - Custom scattered positions */}
-                <div className="relative w-full" style={{ minHeight: '3600px' }}>
+                {/* Grid Container - Scaled scattered positions for all screen sizes */}
+                <div className="relative w-full" style={{ minHeight: 'min(calc(100vw * 2.7), 3240px)' }}>
                     {/* Image 1 - Top Left */}
                     <motion.div
                         className="absolute"
@@ -76,7 +76,7 @@ export default function GalleryPage() {
                     <motion.div
                         className="absolute"
                         style={{
-                            top: '400px',
+                            top: 'min(calc(100vw * 0.42), 500px)',
                             right: '5%',
                             width: '40%',
                             maxWidth: '550px'
@@ -99,10 +99,10 @@ export default function GalleryPage() {
                     <motion.div
                         className="absolute"
                         style={{
-                            top: '1100px',
+                            top: 'min(calc(100vw * 1.0), 1200px)',
                             left: '0%',
-                            width: '55%',
-                            maxWidth: '750px'
+                            width: '65%',
+                            maxWidth: '880px'
                         }}
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -122,7 +122,7 @@ export default function GalleryPage() {
                     <motion.div
                         className="absolute"
                         style={{
-                            top: '1800px',
+                            top: 'min(calc(100vw * 1.55), 1860px)',
                             right: '5%',
                             width: '60%',
                             maxWidth: '850px'
@@ -145,7 +145,7 @@ export default function GalleryPage() {
                     <motion.div
                         className="absolute"
                         style={{
-                            top: '2600px',
+                            top: 'min(calc(100vw * 2.05), 2460px)',
                             left: '10%',
                             width: '48%',
                             maxWidth: '650px'
@@ -178,16 +178,16 @@ export default function GalleryPage() {
 
             {/* Footer - Legal & Contact */}
             <footer className="border-t border-gray-200">
-                <div className="flex justify-center px-8 py-11">
-                    <div className="flex flex-col md:flex-row gap-11 md:gap-27 items-start">
+                <div className="flex justify-center px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-11">
+                    <div className="flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-27 items-center">
                         {/* Legal Notice */}
-                        <div className="flex flex-col">
+                        <div className="flex flex-col items-center">
                             <h3 className="text-sm font-medium text-black mb-4 uppercase tracking-wider">
                                 Legal Notice
                             </h3>
                             <div className="flex items-center gap-2">
                                 <p className="text-xs text-gray-600 leading-relaxed">
-                                    © 2025 Darol Wang. All rights reserved.
+                                    © 2025 Dairou Wang. All rights reserved.
                                 </p>
                                 <div className="relative flex items-center">
                                     <button
@@ -219,7 +219,7 @@ export default function GalleryPage() {
                         </div>
 
                         {/* Contact Me */}
-                        <div className="flex flex-col">
+                        <div className="flex flex-col items-center">
                             <h3 className="text-sm font-medium text-black mb-4 uppercase tracking-wider">
                                 Contact Me
                             </h3>

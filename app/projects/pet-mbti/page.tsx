@@ -14,35 +14,36 @@ export default function PetMBTIPage() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
-                <div className="w-full px-5 py-4 flex justify-between items-center">
-                    <Link href="/" className="text-xl font-bold text-black hover:text-[#1471af] transition-colors duration-300">
-                        Dairou Wang
+                <div className="w-full px-4 sm:px-5 py-3 sm:py-4 flex justify-between items-center">
+                    <Link href="/" className="text-lg sm:text-xl font-bold text-black hover:text-[#1471af] transition-colors duration-300">
+                        Dairou Wang's Portfolio
                     </Link>
                     <Link 
                         href="/#works" 
-                        className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-gray-600 hover:text-[#1471af] transition-colors duration-300"
+                        className="flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-xs font-medium uppercase tracking-wider text-gray-600 hover:text-[#1471af] transition-colors duration-300"
                     >
-                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
-                        Back to Works
+                        <span className="hidden xs:inline">Back to Works</span>
+                        <span className="xs:hidden">Back</span>
                     </Link>
                 </div>
             </motion.nav>
 
             {/* Hero Section */}
-            <section className="pt-24 pb-12 px-5">
+            <section className="pt-20 sm:pt-24 pb-8 sm:pb-12 px-4 sm:px-5">
                 <div className="max-w-5xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <div className="flex items-center gap-2 mb-4">
-                            <span className="text-5xl">🐾</span>
-                            <h1 className="text-4xl md:text-5xl font-medium text-black">Pet MBTI Testing Website</h1>
+                        <div className="flex items-center gap-2 mb-3 sm:mb-4">
+                            <span className="text-3xl sm:text-4xl md:text-5xl">🐾</span>
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-black">Pet MBTI Testing Website</h1>
                         </div>
-                        <p className="text-xl text-gray-600 font-light max-w-2xl leading-relaxed">
+                        <p className="text-base sm:text-lg md:text-xl text-gray-600 font-light max-w-2xl leading-relaxed">
                             A playful full-stack experience that translates real pet behaviors into MBTI-style personalities through interactive quizzes, secure auth, and delightful storytelling.
                         </p>
                     </motion.div>
@@ -57,7 +58,7 @@ export default function PetMBTIPage() {
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
                 <div className="max-w-5xl mx-auto">
-                    <div className="relative w-full aspect-[16/9] rounded-[28px] overflow-hidden shadow-2xl">
+                    <div className="relative w-full aspect-[16/9] rounded-2xl sm:rounded-[24px] md:rounded-[28px] overflow-hidden shadow-lg sm:shadow-xl md:shadow-2xl">
                         <Image
                             src="/pet-mbti-cover.png"
                             alt="Pet MBTI Project Cover"
@@ -70,7 +71,7 @@ export default function PetMBTIPage() {
             </motion.section>
 
             {/* Content Sections */}
-            <div className="max-w-3xl mx-auto px-5 pt-12 pb-20 space-y-8">
+            <div className="max-w-3xl mx-auto px-4 sm:px-5 pt-8 sm:pt-10 md:pt-12 pb-12 sm:pb-16 md:pb-20 space-y-6 sm:space-y-7 md:space-y-8">
                 {/* Overview */}
                 <ContentSection
                     icon="🟣"
@@ -157,8 +158,8 @@ export default function PetMBTIPage() {
             </div>
 
             {/* Back to Works CTA */}
-            <section className="py-16">
-                <div className="max-w-3xl mx-auto px-5">
+            <section className="py-12 sm:py-14 md:py-16">
+                <div className="max-w-3xl mx-auto px-4 sm:px-5">
                     <motion.div
                         className="flex justify-center"
                         initial={{ opacity: 0, y: 20 }}
@@ -167,11 +168,11 @@ export default function PetMBTIPage() {
                     >
                         <Link href="/#works">
                             <motion.button
-                                className="px-7 py-3 rounded-full border-2 border-[#1471af] text-[#1471af] hover:bg-[#1471af] hover:text-white transition-all duration-300 flex items-center gap-2 text-sm font-medium"
+                                className="px-5 sm:px-6 md:px-7 py-2.5 sm:py-3 rounded-full border-2 border-[#1471af] text-[#1471af] hover:bg-[#1471af] hover:text-white transition-all duration-300 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                                 </svg>
                                 View More Projects
@@ -205,13 +206,13 @@ function ContentSection({
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay, ease: "easeOut" }}
         >
-            <div className="flex items-center gap-2 mb-4">
-                <span className="text-2xl">{icon}</span>
-                <h2 className="text-3xl font-medium" style={{ color }}>
+            <div className="flex items-center gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+                <span className="text-xl sm:text-2xl">{icon}</span>
+                <h2 className="text-2xl sm:text-3xl font-medium" style={{ color }}>
                     {title}
                 </h2>
             </div>
-            <div className="pl-8">
+            <div className="pl-4 sm:pl-6 md:pl-8">
                 {children}
             </div>
         </motion.div>
@@ -220,7 +221,7 @@ function ContentSection({
 
 function FeatureItem({ text }: { text: string }) {
     return (
-        <li className="text-base text-gray-700 leading-relaxed flex items-start gap-2">
+        <li className="text-sm sm:text-base text-gray-700 leading-relaxed flex items-start gap-1.5 sm:gap-2">
             <span className="text-[#1471af] mt-0.5">•</span>
             <span>{text}</span>
         </li>
@@ -229,11 +230,11 @@ function FeatureItem({ text }: { text: string }) {
 
 function TechItem({ label, value }: { label: string; value: string }) {
     return (
-        <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
-            <div className="text-xs font-medium text-gray-500 mb-1.5 uppercase tracking-wider">
+        <div className="bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div className="text-[10px] sm:text-xs font-medium text-gray-500 mb-1 sm:mb-1.5 uppercase tracking-wider">
                 {label}
             </div>
-            <div className="text-sm text-gray-900 font-light">
+            <div className="text-xs sm:text-sm text-gray-900 font-light">
                 {value}
             </div>
         </div>

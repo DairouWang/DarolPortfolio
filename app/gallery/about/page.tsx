@@ -8,15 +8,15 @@ export default function GalleryAboutPage() {
         <main className="min-h-screen bg-white">
             {/* Top Navigation */}
             <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
-                <div className="flex justify-between items-center px-8 py-5">
+                <div className="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 sm:py-5">
                     <Link 
                         href="/gallery"
-                        className="text-xl font-light text-gray-800 hover:text-gray-500 transition-colors duration-300"
+                        className="text-base sm:text-lg md:text-xl font-light text-gray-800 hover:text-gray-500 transition-colors duration-300"
                     >
                         ← Gallery
                     </Link>
 
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-center gap-3 sm:gap-4 md:gap-5">
                         <Link
                             href="/"
                             className="text-sm font-light text-gray-600 hover:text-black transition-colors duration-300"
@@ -41,20 +41,20 @@ export default function GalleryAboutPage() {
             </nav>
 
             {/* Content */}
-            <div className="pt-32 pb-20 px-8">
+            <div className="pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8">
                 <div className="max-w-[700px] mx-auto">
                     {/* English Section */}
                     <motion.section
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="mb-24"
+                        className="mb-16 sm:mb-20 md:mb-24"
                     >
-                        <h1 className="text-3xl font-light text-gray-900 mb-10">
+                        <h1 className="text-2xl sm:text-3xl font-light text-gray-900 mb-8 sm:mb-10">
                             About the Gallery
                         </h1>
                         
-                        <div className="space-y-6 text-base font-light text-gray-600 leading-relaxed">
+                        <div className="space-y-4 sm:space-y-5 md:space-y-6 text-sm sm:text-base font-light text-gray-600 leading-relaxed">
                             <p>
                                 Photography has always been my way of capturing life&apos;s little moments. I grew up in a family where both my parents loved photography, leaving behind countless memories of my childhood. Their photos shaped my earliest understanding of light, composition, and the joy of preserving fleeting moments, laying the foundation for my own love of photography.
                             </p>
@@ -78,7 +78,7 @@ export default function GalleryAboutPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
-                        className="border-t border-gray-200 mb-24"
+                        className="border-t border-gray-200 mb-16 sm:mb-20 md:mb-24"
                     ></motion.div>
 
                     {/* Chinese Section */}
@@ -87,11 +87,11 @@ export default function GalleryAboutPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
                     >
-                        <h1 className="text-3xl font-light text-gray-900 mb-10">
+                        <h1 className="text-2xl sm:text-3xl font-light text-gray-900 mb-8 sm:mb-10">
                             关于我的作品集
                         </h1>
                         
-                        <div className="space-y-6 text-base font-light text-gray-600 leading-relaxed">
+                        <div className="space-y-4 sm:space-y-5 md:space-y-6 text-sm sm:text-base font-light text-gray-600 leading-relaxed">
                             <p>
                                 摄影，是我记录生活点滴的方式。我成长在一个父母都热爱摄影的家庭，他们留下了许多我童年的美好回忆。这些照片塑造了我对光影、构图以及捕捉瞬间之美的最初理解，也为我后来对摄影的热爱奠定了基础。
                             </p>
@@ -115,7 +115,7 @@ export default function GalleryAboutPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="text-center mt-20"
+                        className="text-center mt-12 sm:mt-16 md:mt-20"
                     >
                         <Link 
                             href="/gallery"
@@ -129,9 +129,9 @@ export default function GalleryAboutPage() {
 
             {/* Footer */}
             <footer className="border-t border-gray-200">
-                <div className="flex justify-center px-8 py-8">
+                <div className="flex justify-center px-4 sm:px-6 md:px-8 py-6 sm:py-7 md:py-8">
                     <p className="text-xs text-gray-400">
-                        © 2025 Darol Wang. All rights reserved.
+                        © 2025 Dairou Wang. All rights reserved.
                     </p>
                 </div>
             </footer>
