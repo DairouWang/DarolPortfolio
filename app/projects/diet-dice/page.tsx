@@ -14,15 +14,15 @@ export default function DietDicePage() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
-                <div className="w-full px-8 py-6 flex justify-between items-center">
-                    <Link href="/" className="text-3xl font-bold text-black hover:text-[#f9674d] transition-colors duration-300">
+                <div className="w-full px-5 py-4 flex justify-between items-center">
+                    <Link href="/" className="text-xl font-bold text-black hover:text-[#f9674d] transition-colors duration-300">
                         Dairou Wang
                     </Link>
                     <Link 
                         href="/#works" 
-                        className="flex items-center gap-2 text-base font-medium uppercase tracking-wider text-gray-600 hover:text-[#f9674d] transition-colors duration-300"
+                        className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-gray-600 hover:text-[#f9674d] transition-colors duration-300"
                     >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
                         Back to Works
@@ -31,19 +31,19 @@ export default function DietDicePage() {
             </motion.nav>
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 px-8">
-                <div className="max-w-7xl mx-auto">
+            <section className="pt-24 pb-12 px-5">
+                <div className="max-w-5xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <div className="flex items-center gap-3 mb-6">
-                            <span className="text-7xl">🍏</span>
-                            <h1 className="text-8xl md:text-9xl font-medium text-black">Diet Dice</h1>
+                        <div className="flex items-center gap-2 mb-4">
+                            <span className="text-5xl">🍏</span>
+                            <h1 className="text-5xl md:text-6xl font-medium text-black">Diet Dice</h1>
                         </div>
-                        <p className="text-3xl text-gray-600 font-light max-w-3xl leading-relaxed">
-                            A web-based meal decision tool designed to reduce everyday decision fatigue through playful &quot;dice roll&quot; interactions and behavioral logic.
+                        <p className="text-xl text-gray-600 font-light max-w-2xl leading-relaxed">
+                            A web-based meal decision tool designed to reduce everyday decision fatigue through playful "dice roll" interactions and behavioral logic.
                         </p>
                     </motion.div>
                 </div>
@@ -51,13 +51,13 @@ export default function DietDicePage() {
 
             {/* Cover Image */}
             <motion.section 
-                className="px-8 pb-20"
+                className="px-5 py-8"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
-                <div className="max-w-7xl mx-auto">
-                    <div className="relative w-full aspect-[16/9] rounded-[42px] overflow-hidden shadow-2xl">
+                <div className="max-w-5xl mx-auto">
+                    <div className="relative w-full aspect-[16/9] rounded-[28px] overflow-hidden shadow-2xl">
                         <Image
                             src="/diet-dice-cover.png"
                             alt="Diet Dice Project Cover"
@@ -70,7 +70,7 @@ export default function DietDicePage() {
             </motion.section>
 
             {/* Content Sections */}
-            <div className="max-w-5xl mx-auto px-8 pb-32 space-y-20">
+            <div className="max-w-3xl mx-auto px-5 pt-12 pb-20 space-y-8">
                 {/* Overview */}
                 <ContentSection
                     icon="🟣"
@@ -78,8 +78,8 @@ export default function DietDicePage() {
                     color="#f9674d"
                     delay={0.3}
                 >
-                    <p className="text-2xl text-gray-700 leading-relaxed">
-                        Diet Dice is a web-based meal decision tool designed to reduce everyday decision fatigue. It blends behavioral logic, clean aesthetics, and a playful &quot;dice roll&quot; interaction to help users choose meals that align with their dietary goals—quickly, intuitively, and delightfully.
+                    <p className="text-base text-gray-700 leading-relaxed">
+                        Diet Dice is a web-based meal decision tool designed to reduce everyday decision fatigue. It blends behavioral logic, clean aesthetics, and a playful "dice roll" interaction to help users choose meals that align with their dietary goals—quickly, intuitively, and delightfully.
                     </p>
                 </ContentSection>
 
@@ -90,13 +90,13 @@ export default function DietDicePage() {
                     color="#f9674d"
                     delay={0.4}
                 >
-                    <p className="text-2xl text-gray-700 leading-relaxed mb-4">
+                    <p className="text-base text-gray-700 leading-relaxed mb-3">
                         I wanted to solve a universal problem:
                     </p>
-                    <blockquote className="text-4xl font-light text-[#f6ad56] italic my-8 pl-6 border-l-4 border-[#f6ad56]">
-                        &quot;What should I eat today?&quot;
+                    <blockquote className="text-2xl font-light text-[#f6ad56] italic my-5 pl-4 border-l-3 border-[#f6ad56]">
+                        "What should I eat today?"
                     </blockquote>
-                    <p className="text-2xl text-gray-700 leading-relaxed">
+                    <p className="text-base text-gray-700 leading-relaxed">
                         For people trying to lose weight or build consistency, this small question creates real friction. Diet Dice turns that moment into a simple, supportive interaction.
                     </p>
                 </ContentSection>
@@ -108,9 +108,9 @@ export default function DietDicePage() {
                     color="#f9674d"
                     delay={0.5}
                 >
-                    <ul className="space-y-4">
+                    <ul className="space-y-3">
                         <FeatureItem text="A responsive, aesthetic, React + Tailwind interface focused on clarity and low cognitive load" />
-                        <FeatureItem text='A &quot;decision dice&quot; system that combines randomness with user preferences to make meal selection feel effortless' />
+                        <FeatureItem text='A "decision dice" system that combines randomness with user preferences to make meal selection feel effortless' />
                         <FeatureItem text="Configurable user inputs (meal type, dietary constraints, health goals) with validation and real-time feedback" />
                         <FeatureItem text="Persistent user preference handling through client-side state" />
                         <FeatureItem text="Fully deployed and hosted using AWS Amplify, enabling CI/CD, scalable hosting, and seamless frontend updates" />
@@ -124,28 +124,28 @@ export default function DietDicePage() {
                     color="#f9674d"
                     delay={0.6}
                 >
-                    <div className="space-y-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <TechItem label="Frontend" value="React (CRA) with modern hooks-based architecture" />
                             <TechItem label="UI/UX" value="Tailwind CSS, responsive layout, minimal and clean interaction patterns" />
                             <TechItem label="State Management" value="React hooks for preference storage and decision logic" />
-                            <TechItem label="Decision Engine" value='Randomized &quot;dice roll&quot; weighted by user-selected categories' />
+                            <TechItem label="Decision Engine" value='Randomized "dice roll" weighted by user-selected categories' />
                         </div>
-                        <div className="bg-white rounded-2xl p-6 shadow-sm">
-                            <div className="text-base font-medium text-gray-500 mb-3 uppercase tracking-wider">
+                        <div className="bg-white rounded-xl p-4 shadow-sm">
+                            <div className="text-xs font-medium text-gray-500 mb-2 uppercase tracking-wider">
                                 Deployment
                             </div>
-                            <ul className="space-y-2 text-xl text-gray-900 font-light">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-[#f9674d] mt-1">•</span>
+                            <ul className="space-y-1.5 text-sm text-gray-900 font-light">
+                                <li className="flex items-start gap-1.5">
+                                    <span className="text-[#f9674d] mt-0.5">•</span>
                                     <span>AWS Amplify for hosting, automatic build & deploy pipelines</span>
                                 </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-[#f9674d] mt-1">•</span>
+                                <li className="flex items-start gap-1.5">
+                                    <span className="text-[#f9674d] mt-0.5">•</span>
                                     <span>Domain, SSL, and versioned releases managed through Amplify</span>
                                 </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-[#f9674d] mt-1">•</span>
+                                <li className="flex items-start gap-1.5">
+                                    <span className="text-[#f9674d] mt-0.5">•</span>
                                     <span>Future-ready Architecture: Prepared for integration with AI-based nutrition recommendations (SageMaker / OpenAI API)</span>
                                 </li>
                             </ul>
@@ -160,7 +160,7 @@ export default function DietDicePage() {
                     color="#f9674d"
                     delay={0.7}
                 >
-                    <ul className="space-y-4">
+                    <ul className="space-y-3">
                         <FeatureItem text="Reduces cognitive overload around daily food choices" />
                         <FeatureItem text="Makes healthy decision-making feel fun, not restrictive" />
                         <FeatureItem text="Offers a small, elegant experience that fits into real life" />
@@ -175,25 +175,25 @@ export default function DietDicePage() {
                     color="#f9674d"
                     delay={0.8}
                 >
-                    <div className="space-y-4">
-                        <p className="text-2xl text-gray-700 leading-relaxed font-medium">
+                    <div className="space-y-3">
+                        <p className="text-base text-gray-700 leading-relaxed font-medium">
                             Product Designer & Frontend Developer
                         </p>
-                        <ul className="space-y-3">
-                            <li className="text-2xl text-gray-700 leading-relaxed flex items-start gap-3">
-                                <span className="text-[#f9674d] mt-1">•</span>
+                        <ul className="space-y-2">
+                            <li className="text-base text-gray-700 leading-relaxed flex items-start gap-2">
+                                <span className="text-[#f9674d] mt-0.5">•</span>
                                 <span>Led UI/UX, component design, interaction flow, and accessibility polish</span>
                             </li>
-                            <li className="text-2xl text-gray-700 leading-relaxed flex items-start gap-3">
-                                <span className="text-[#f9674d] mt-1">•</span>
+                            <li className="text-base text-gray-700 leading-relaxed flex items-start gap-2">
+                                <span className="text-[#f9674d] mt-0.5">•</span>
                                 <span>Implemented decision logic, validation, and state architecture</span>
                             </li>
-                            <li className="text-2xl text-gray-700 leading-relaxed flex items-start gap-3">
-                                <span className="text-[#f9674d] mt-1">•</span>
+                            <li className="text-base text-gray-700 leading-relaxed flex items-start gap-2">
+                                <span className="text-[#f9674d] mt-0.5">•</span>
                                 <span>Configured end-to-end deployment on AWS Amplify</span>
                             </li>
-                            <li className="text-2xl text-gray-700 leading-relaxed flex items-start gap-3">
-                                <span className="text-[#f9674d] mt-1">•</span>
+                            <li className="text-base text-gray-700 leading-relaxed flex items-start gap-2">
+                                <span className="text-[#f9674d] mt-0.5">•</span>
                                 <span>Applied psychology-informed UX patterns to improve user engagement</span>
                             </li>
                         </ul>
@@ -207,7 +207,7 @@ export default function DietDicePage() {
                     color="#f9674d"
                     delay={0.9}
                 >
-                    <ul className="space-y-4">
+                    <ul className="space-y-3">
                         <FeatureItem text="Behavior-driven decision model" />
                         <FeatureItem text="Clean, aesthetic interface designed for usability and delight" />
                         <FeatureItem text="Scalable and production-ready deployment via AWS Amplify" />
@@ -217,8 +217,8 @@ export default function DietDicePage() {
             </div>
 
             {/* Back to Works CTA */}
-            <section className="pb-32">
-                <div className="max-w-5xl mx-auto px-8">
+            <section className="py-16">
+                <div className="max-w-3xl mx-auto px-5">
                     <motion.div
                         className="flex justify-center"
                         initial={{ opacity: 0, y: 20 }}
@@ -227,11 +227,11 @@ export default function DietDicePage() {
                     >
                         <Link href="/#works">
                             <motion.button
-                                className="px-10 py-4 rounded-full border-2 border-[#f9674d] text-[#f9674d] hover:bg-[#f9674d] hover:text-white transition-all duration-300 flex items-center gap-3 text-xl font-medium"
+                                className="px-7 py-3 rounded-full border-2 border-[#f9674d] text-[#f9674d] hover:bg-[#f9674d] hover:text-white transition-all duration-300 flex items-center gap-2 text-sm font-medium"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                                 </svg>
                                 View More Projects
@@ -265,13 +265,13 @@ function ContentSection({
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay, ease: "easeOut" }}
         >
-            <div className="flex items-center gap-3 mb-6">
-                <span className="text-4xl">{icon}</span>
-                <h2 className="text-5xl font-medium" style={{ color }}>
+            <div className="flex items-center gap-2 mb-4">
+                <span className="text-2xl">{icon}</span>
+                <h2 className="text-3xl font-medium" style={{ color }}>
                     {title}
                 </h2>
             </div>
-            <div className="pl-12">
+            <div className="pl-8">
                 {children}
             </div>
         </motion.div>
@@ -280,8 +280,8 @@ function ContentSection({
 
 function FeatureItem({ text }: { text: string }) {
     return (
-        <li className="text-2xl text-gray-700 leading-relaxed flex items-start gap-3">
-            <span className="text-[#f9674d] mt-1">•</span>
+        <li className="text-base text-gray-700 leading-relaxed flex items-start gap-2">
+            <span className="text-[#f9674d] mt-0.5">•</span>
             <span>{text}</span>
         </li>
     );
@@ -289,14 +289,13 @@ function FeatureItem({ text }: { text: string }) {
 
 function TechItem({ label, value }: { label: string; value: string }) {
     return (
-        <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
-            <div className="text-base font-medium text-gray-500 mb-2 uppercase tracking-wider">
+        <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div className="text-xs font-medium text-gray-500 mb-1.5 uppercase tracking-wider">
                 {label}
             </div>
-            <div className="text-xl text-gray-900 font-light">
+            <div className="text-sm text-gray-900 font-light">
                 {value}
             </div>
         </div>
     );
 }
-

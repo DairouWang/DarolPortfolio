@@ -14,15 +14,15 @@ export default function MindReaderPage() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
-                <div className="w-full px-8 py-6 flex justify-between items-center">
-                    <Link href="/" className="text-3xl font-bold text-black hover:text-[#f6ad56] transition-colors duration-300">
+                <div className="w-full px-5 py-4 flex justify-between items-center">
+                    <Link href="/" className="text-xl font-bold text-black hover:text-[#f6ad56] transition-colors duration-300">
                         Dairou Wang
                     </Link>
                     <Link 
                         href="/#works" 
-                        className="flex items-center gap-2 text-base font-medium uppercase tracking-wider text-gray-600 hover:text-[#f6ad56] transition-colors duration-300"
+                        className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-gray-600 hover:text-[#f6ad56] transition-colors duration-300"
                     >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
                         Back to Works
@@ -31,18 +31,18 @@ export default function MindReaderPage() {
             </motion.nav>
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 px-8">
-                <div className="max-w-7xl mx-auto">
+            <section className="pt-24 pb-12 px-5">
+                <div className="max-w-5xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <div className="flex items-center gap-3 mb-6">
-                            <span className="text-7xl">🧠</span>
-                            <h1 className="text-8xl md:text-9xl font-medium text-black">Mind Reader</h1>
+                        <div className="flex items-center gap-2 mb-4">
+                            <span className="text-5xl">🧠</span>
+                            <h1 className="text-5xl md:text-6xl font-medium text-black">Mind Reader</h1>
                         </div>
-                        <p className="text-3xl text-gray-600 font-light max-w-3xl leading-relaxed">
+                        <p className="text-xl text-gray-600 font-light max-w-2xl leading-relaxed">
                             An end-to-end text intelligence platform that compares classical ML and Transformer models in real time to surface sentiment, classification, and feature insights.
                         </p>
                     </motion.div>
@@ -51,13 +51,13 @@ export default function MindReaderPage() {
 
             {/* Cover Image */}
             <motion.section 
-                className="px-8 pb-20"
+                className="px-5 py-8"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
-                <div className="max-w-7xl mx-auto">
-                    <div className="relative w-full aspect-[16/9] rounded-[42px] overflow-hidden shadow-2xl">
+                <div className="max-w-5xl mx-auto">
+                    <div className="relative w-full aspect-[16/9] rounded-[28px] overflow-hidden shadow-2xl">
                         <Image
                             src="/mind-reader-cover.png"
                             alt="Mind Reader Project Cover"
@@ -70,7 +70,7 @@ export default function MindReaderPage() {
             </motion.section>
 
             {/* Content Sections */}
-            <div className="max-w-5xl mx-auto px-8 pb-32 space-y-20">
+            <div className="max-w-3xl mx-auto px-5 pt-12 pb-20 space-y-8">
                 {/* Overview */}
                 <ContentSection
                     icon="🟣"
@@ -78,7 +78,7 @@ export default function MindReaderPage() {
                     color="#f6ad56"
                     delay={0.3}
                 >
-                    <p className="text-2xl text-gray-700 leading-relaxed">
+                    <p className="text-base text-gray-700 leading-relaxed">
                         Mind Reader is a scalable ML platform that analyzes text through multiple models—classical ML, Transformers, and custom pipelines—to generate insights such as sentiment, classification, and feature importance.
                     </p>
                 </ContentSection>
@@ -90,7 +90,7 @@ export default function MindReaderPage() {
                     color="#f6ad56"
                     delay={0.4}
                 >
-                    <p className="text-2xl text-gray-700 leading-relaxed">
+                    <p className="text-base text-gray-700 leading-relaxed">
                         Text data is rich, but hard to process at scale. Researchers, students, and teams often need a simple tool to compare models and visualize results instantly.
                     </p>
                 </ContentSection>
@@ -102,7 +102,7 @@ export default function MindReaderPage() {
                     color="#f6ad56"
                     delay={0.5}
                 >
-                    <ul className="space-y-4">
+                    <ul className="space-y-3">
                         <FeatureItem text="End-to-end ML pipeline with 4 different models" />
                         <FeatureItem text="Real-time comparison between classical ML (SVM) and large Transformer models (BERT)" />
                         <FeatureItem text="TF-IDF + Linear SVM feature engineering workflow" />
@@ -119,7 +119,7 @@ export default function MindReaderPage() {
                     color="#f6ad56"
                     delay={0.6}
                 >
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <TechItem label="Models" value="SVM, BERT, TensorFlow NLP models" />
                         <TechItem label="Pipeline" value="Hugging Face, NumPy, TF-IDF, GridSearchCV" />
                         <TechItem label="Frontend" value="Streamlit (interactive UI + real-time processing)" />
@@ -135,7 +135,7 @@ export default function MindReaderPage() {
                     color="#f6ad56"
                     delay={0.7}
                 >
-                    <ul className="space-y-4">
+                    <ul className="space-y-3">
                         <FeatureItem text="Enables fast iteration across different NLP approaches" />
                         <FeatureItem text="Makes model comparison intuitive for non-technical users" />
                         <FeatureItem text="Fully productionized pipeline with containerized deployment" />
@@ -149,15 +149,15 @@ export default function MindReaderPage() {
                     color="#f6ad56"
                     delay={0.8}
                 >
-                    <p className="text-2xl text-gray-700 leading-relaxed font-medium">
+                    <p className="text-base text-gray-700 leading-relaxed font-medium">
                         Machine learning engineer, data scientist, frontend builder, and deployment owner.
                     </p>
                 </ContentSection>
             </div>
 
             {/* Back to Works CTA */}
-            <section className="pb-32">
-                <div className="max-w-5xl mx-auto px-8">
+            <section className="py-16">
+                <div className="max-w-3xl mx-auto px-5">
                     <motion.div
                         className="flex justify-center"
                         initial={{ opacity: 0, y: 20 }}
@@ -166,11 +166,11 @@ export default function MindReaderPage() {
                     >
                         <Link href="/#works">
                             <motion.button
-                                className="px-10 py-4 rounded-full border-2 border-[#f6ad56] text-[#f6ad56] hover:bg-[#f6ad56] hover:text-white transition-all duration-300 flex items-center gap-3 text-xl font-medium"
+                                className="px-7 py-3 rounded-full border-2 border-[#f6ad56] text-[#f6ad56] hover:bg-[#f6ad56] hover:text-white transition-all duration-300 flex items-center gap-2 text-sm font-medium"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                                 </svg>
                                 View More Projects
@@ -204,13 +204,13 @@ function ContentSection({
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay, ease: "easeOut" }}
         >
-            <div className="flex items-center gap-3 mb-6">
-                <span className="text-4xl">{icon}</span>
-                <h2 className="text-5xl font-medium" style={{ color }}>
+            <div className="flex items-center gap-2 mb-4">
+                <span className="text-2xl">{icon}</span>
+                <h2 className="text-3xl font-medium" style={{ color }}>
                     {title}
                 </h2>
             </div>
-            <div className="pl-12">
+            <div className="pl-8">
                 {children}
             </div>
         </motion.div>
@@ -219,8 +219,8 @@ function ContentSection({
 
 function FeatureItem({ text }: { text: string }) {
     return (
-        <li className="text-2xl text-gray-700 leading-relaxed flex items-start gap-3">
-            <span className="text-[#f6ad56] mt-1">•</span>
+        <li className="text-base text-gray-700 leading-relaxed flex items-start gap-2">
+            <span className="text-[#f6ad56] mt-0.5">•</span>
             <span>{text}</span>
         </li>
     );
@@ -228,14 +228,13 @@ function FeatureItem({ text }: { text: string }) {
 
 function TechItem({ label, value }: { label: string; value: string }) {
     return (
-        <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
-            <div className="text-base font-medium text-gray-500 mb-2 uppercase tracking-wider">
+        <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div className="text-xs font-medium text-gray-500 mb-1.5 uppercase tracking-wider">
                 {label}
             </div>
-            <div className="text-xl text-gray-900 font-light">
+            <div className="text-sm text-gray-900 font-light">
                 {value}
             </div>
         </div>
     );
 }
-

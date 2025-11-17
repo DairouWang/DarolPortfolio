@@ -25,7 +25,7 @@ const projects = [
     {
         id: 3,
         title: "Pet MBTI Test",
-        description: "A playful, psychology-inspired web application that helps pet owners discover their pet&apos;s &quot;MBTI-style&quot; personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.",
+        description: "A playful, psychology-inspired web application that helps pet owners discover their pet's \"MBTI-style\" personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.",
         image: "/pet-mbti-cover.png",
         color: "#1471af",
         link: "/projects/pet-mbti",
@@ -37,21 +37,21 @@ export default function Works() {
     const titleInView = useInView(titleRef, { once: true, margin: "-100px" });
 
     return (
-        <section id="works" className="w-full min-h-screen bg-[#FAFAFA] flex flex-col justify-center items-start px-[200px] py-36">
+        <section id="works" className="w-full min-h-screen bg-[#FAFAFA] flex flex-col justify-center items-start px-[135px] py-24">
             <div className="w-full">
                 {/* Title Section */}
                 <motion.div 
                     ref={titleRef}
-                    className="flex justify-between items-start mb-16 w-full"
+                    className="flex justify-between items-start mb-11 w-full"
                     initial={{ opacity: 0, y: 50 }}
                     animate={titleInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <h2 className="text-7xl md:text-8xl lg:text-9xl font-medium text-black leading-none">
+                    <h2 className="text-5xl md:text-6xl lg:text-7xl font-medium text-black leading-none">
                         Impressive Works
                     </h2>
-                    <p className="text-right text-sm md:text-base font-light text-black max-w-md leading-relaxed uppercase tracking-wide">
-                        HERE&apos;S A SELECTION OF PROJECTS THAT<br />
+                    <p className="text-right text-xs md:text-sm font-light text-black max-w-xs leading-relaxed uppercase tracking-wide">
+                        HERE'S A SELECTION OF PROJECTS THAT<br />
                         SHOWCASE MY PASSION FOR DESIGN<br />
                         AND DEVELOPMENT, REFLECTING<br />
                         CREATIVITY AND INNOVATION.
@@ -59,7 +59,7 @@ export default function Works() {
                 </motion.div>
 
                 {/* Project Cards Grid */}
-                <div className="flex flex-col gap-16 mb-16">
+                <div className="flex flex-col gap-11 mb-11">
                     {projects.map((project, index) => (
                         <ProjectCard key={project.id} project={project} index={index} />
                     ))}
@@ -86,10 +86,10 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
                 animate={cardInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 80 }}
                 transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
             >
-            <div className={`flex gap-10 items-center ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}>
+            <div className={`flex gap-7 items-center ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}>
                 {/* Image */}
                 <motion.div 
-                    className="relative overflow-hidden rounded-[42px] w-1/2 aspect-[16/9]"
+                    className="relative overflow-hidden rounded-[28px] w-1/2 aspect-[16/9]"
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
                 >
@@ -103,26 +103,26 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
                 </motion.div>
 
                 {/* Content - Title, Description and View Details */}
-                <div className="w-1/2 flex flex-col gap-4">
+                <div className="w-1/2 flex flex-col gap-3">
                     <div className="flex flex-col text-left">
-                        <h3 className="text-5xl md:text-6xl font-normal text-black mb-4 leading-[1.1] transition-colors duration-300 group-hover:text-[var(--project-color)] m-0 p-0 text-left w-full" style={{ '--project-color': project.color } as React.CSSProperties}>
+                        <h3 className="text-3xl md:text-4xl font-normal text-black mb-3 leading-[1.1] transition-colors duration-300 group-hover:text-[var(--project-color)] m-0 p-0 text-left w-full" style={{ '--project-color': project.color } as React.CSSProperties}>
                             {project.title}
                         </h3>
-                        <p className="text-xl md:text-2xl font-light text-gray-600 leading-[1.6] m-0 p-1 text-left w-full">
+                        <p className="text-base md:text-lg font-light text-gray-600 leading-[1.6] m-0 p-1 text-left w-full">
                             {project.description}
                         </p>
                     </div>
 
                     {/* View Details - appears on hover */}
-                    <div className="flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-2">
+                    <div className="flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-2">
                         <span 
-                            className="text-base font-medium tracking-wider uppercase whitespace-nowrap"
+                            className="text-xs font-medium tracking-wider uppercase whitespace-nowrap"
                             style={{ color: project.color }}
                         >
                             View Details
                         </span>
                         <svg 
-                            className="w-5 h-5" 
+                            className="w-3.5 h-3.5" 
                             fill="none" 
                             stroke="currentColor" 
                             viewBox="0 0 24 24"
@@ -146,24 +146,23 @@ function ExploreButton() {
     return (
         <motion.div 
             ref={buttonRef}
-            className="flex justify-center mt-12"
+            className="flex justify-center mt-8"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={buttonInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
         >
             <motion.button 
-                className="px-8 py-3 rounded-full border border-zinc-400 hover:border-black transition-colors duration-300 flex items-center gap-3 group"
+                className="px-5 py-2 rounded-full border border-zinc-400 hover:border-black transition-colors duration-300 flex items-center gap-2 group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
             >
                 <motion.div 
-                    className="w-2.5 h-2.5 bg-black rounded-full"
+                    className="w-1.5 h-1.5 bg-black rounded-full"
                     animate={{ scale: [1, 1.2, 1] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                 />
-                <span className="text-xl font-normal text-black">Explore more</span>
+                <span className="text-sm font-normal text-black">Explore more</span>
             </motion.button>
         </motion.div>
     );
 }
-
