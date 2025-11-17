@@ -19,25 +19,11 @@ export default function Footer() {
         >
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-5 py-11">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {/* About Section */}
-                    <motion.div 
-                        className="space-y-3"
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={footerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-                        transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-                    >
-                        <h3 className="text-base font-serif font-semibold text-[#81B4CE] mb-4">
-                            Dairou Wang
-                        </h3>
-                        <p className="text-xs font-light leading-relaxed text-gray-300">
-                            Creative Developer & Designer passionate about building user-centric products with empathy and purpose.
-                        </p>
-                    </motion.div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
 
                     {/* Quick Links */}
                     <motion.div 
-                        className="space-y-3"
+                        className="space-y-3 text-center"
                         initial={{ opacity: 0, y: 30 }}
                         animate={footerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
@@ -66,7 +52,7 @@ export default function Footer() {
 
                     {/* Contact Info */}
                     <motion.div 
-                        className="space-y-3"
+                        className="space-y-3 text-center"
                         initial={{ opacity: 0, y: 30 }}
                         animate={footerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
@@ -75,7 +61,7 @@ export default function Footer() {
                             Contact
                         </h3>
                         <ul className="space-y-2">
-                            <li className="flex items-center space-x-2">
+                            <li className="flex items-center justify-center space-x-2">
                                 <svg className="w-3.5 h-3.5 text-[#81B4CE]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
@@ -83,7 +69,7 @@ export default function Footer() {
                                     dairou2021@gmail.com
                                 </a>
                             </li>
-                            <li className="flex items-center space-x-2">
+                            <li className="flex items-center justify-center space-x-2">
                                 <svg className="w-3.5 h-3.5 text-[#81B4CE]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -97,7 +83,7 @@ export default function Footer() {
 
                     {/* Social Media */}
                     <motion.div 
-                        className="space-y-3"
+                        className="space-y-3 text-center"
                         initial={{ opacity: 0, y: 30 }}
                         animate={footerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                         transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
@@ -105,7 +91,7 @@ export default function Footer() {
                         <h3 className="text-sm font-serif font-semibold text-[#81B4CE] mb-4">
                             Social Media
                         </h3>
-                        <div className="flex space-x-3">
+                        <div className="flex justify-center space-x-3">
                             {/* LinkedIn */}
                             <motion.a 
                                 href="https://www.linkedin.com/in/dairou-wang/" 
@@ -161,7 +147,7 @@ export default function Footer() {
                 transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
             >
                 <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-5 py-4">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
+                    <div className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0">
                         <p className="text-xs text-gray-400">
                             © {new Date().getFullYear()} Dairou Wang. All rights reserved.
                         </p>

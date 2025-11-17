@@ -43,7 +43,7 @@ export default function DietDicePage() {
                             <h1 className="text-5xl md:text-6xl font-medium text-black">Diet Dice</h1>
                         </div>
                         <p className="text-xl text-gray-600 font-light max-w-2xl leading-relaxed">
-                            A web-based meal decision tool designed to reduce everyday decision fatigue through playful "dice roll" interactions and behavioral logic.
+                            A web-based meal decision tool designed to reduce everyday decision fatigue through playful &quot;dice roll&quot; interactions and behavioral logic.
                         </p>
                     </motion.div>
                 </div>
@@ -79,7 +79,7 @@ export default function DietDicePage() {
                     delay={0.3}
                 >
                     <p className="text-base text-gray-700 leading-relaxed">
-                        Diet Dice is a web-based meal decision tool designed to reduce everyday decision fatigue. It blends behavioral logic, clean aesthetics, and a playful "dice roll" interaction to help users choose meals that align with their dietary goals—quickly, intuitively, and delightfully.
+                        Diet Dice is a web-based meal decision tool designed to reduce everyday decision fatigue. It blends behavioral logic, clean aesthetics, and a playful &quot;dice roll&quot; interaction to help users choose meals that align with their dietary goals—quickly, intuitively, and delightfully.
                     </p>
                 </ContentSection>
 
@@ -94,7 +94,7 @@ export default function DietDicePage() {
                         I wanted to solve a universal problem:
                     </p>
                     <blockquote className="text-2xl font-light text-[#f6ad56] italic my-5 pl-4 border-l-3 border-[#f6ad56]">
-                        "What should I eat today?"
+                        &quot;What should I eat today?&quot;
                     </blockquote>
                     <p className="text-base text-gray-700 leading-relaxed">
                         For people trying to lose weight or build consistency, this small question creates real friction. Diet Dice turns that moment into a simple, supportive interaction.
@@ -110,7 +110,7 @@ export default function DietDicePage() {
                 >
                     <ul className="space-y-3">
                         <FeatureItem text="A responsive, aesthetic, React + Tailwind interface focused on clarity and low cognitive load" />
-                        <FeatureItem text='A "decision dice" system that combines randomness with user preferences to make meal selection feel effortless' />
+                        <FeatureItem text='A &quot;decision dice&quot; system that combines randomness with user preferences to make meal selection feel effortless' />
                         <FeatureItem text="Configurable user inputs (meal type, dietary constraints, health goals) with validation and real-time feedback" />
                         <FeatureItem text="Persistent user preference handling through client-side state" />
                         <FeatureItem text="Fully deployed and hosted using AWS Amplify, enabling CI/CD, scalable hosting, and seamless frontend updates" />
@@ -129,7 +129,7 @@ export default function DietDicePage() {
                             <TechItem label="Frontend" value="React (CRA) with modern hooks-based architecture" />
                             <TechItem label="UI/UX" value="Tailwind CSS, responsive layout, minimal and clean interaction patterns" />
                             <TechItem label="State Management" value="React hooks for preference storage and decision logic" />
-                            <TechItem label="Decision Engine" value='Randomized "dice roll" weighted by user-selected categories' />
+                            <TechItem label="Decision Engine" value='Randomized &quot;dice roll&quot; weighted by user-selected categories' />
                         </div>
                         <div className="bg-white rounded-xl p-4 shadow-sm">
                             <div className="text-xs font-medium text-gray-500 mb-2 uppercase tracking-wider">

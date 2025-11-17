@@ -25,7 +25,7 @@ const projects = [
     {
         id: 3,
         title: "Pet MBTI Test",
-        description: "A playful, psychology-inspired web application that helps pet owners discover their pet's \"MBTI-style\" personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.",
+        description: "A playful, psychology-inspired web application that helps pet owners discover their pet's MBTI-style personality. Inspired by behavioral traits—translated into a clean, humorous, fun-to-use digital experience.",
         image: "/pet-mbti-cover.png",
         color: "#1471af",
         link: "/projects/pet-mbti",
@@ -51,7 +51,7 @@ export default function Works() {
                         Impressive Works
                     </h2>
                     <p className="text-right text-xs md:text-sm font-light text-black max-w-xs leading-relaxed uppercase tracking-wide">
-                        HERE'S A SELECTION OF PROJECTS THAT<br />
+                        HERE&apos;S A SELECTION OF PROJECTS THAT<br />
                         SHOWCASE MY PASSION FOR DESIGN<br />
                         AND DEVELOPMENT, REFLECTING<br />
                         CREATIVITY AND INNOVATION.

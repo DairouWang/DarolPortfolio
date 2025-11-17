@@ -16,7 +16,7 @@ export default function GalleryPage() {
                         href="/"
                         className="text-xl font-light text-gray-800 hover:text-gray-500 transition-colors duration-300"
                     >
-                        Dairou's Gallery
+                        Dairou&apos;s Gallery
                     </Link>
 
                     {/* Right Side - About & Instagram */}

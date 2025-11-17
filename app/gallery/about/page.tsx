@@ -56,7 +56,7 @@ export default function GalleryAboutPage() {
                         
                         <div className="space-y-6 text-base font-light text-gray-600 leading-relaxed">
                             <p>
-                                Photography has always been my way of capturing life's little moments. I grew up in a family where both my parents loved photography, leaving behind countless memories of my childhood. Their photos shaped my earliest understanding of light, composition, and the joy of preserving fleeting moments, laying the foundation for my own love of photography.
+                                Photography has always been my way of capturing life&apos;s little moments. I grew up in a family where both my parents loved photography, leaving behind countless memories of my childhood. Their photos shaped my earliest understanding of light, composition, and the joy of preserving fleeting moments, laying the foundation for my own love of photography.
                             </p>
                             
                             <p>
