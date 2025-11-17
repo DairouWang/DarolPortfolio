@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -64,9 +65,11 @@ export default function GalleryPage() {
                         transition={{ duration: 1.3 }}
                     >
                         <div className="relative w-full overflow-hidden group cursor-pointer">
-                            <img
+                            <Image
                                 src="/IMG_0615.jpg"
                                 alt="Gallery Image 1"
+                                width={1200}
+                                height={800}
                                 className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
@@ -87,9 +90,11 @@ export default function GalleryPage() {
                         transition={{ duration: 1.3 }}
                     >
                         <div className="relative w-full overflow-hidden group cursor-pointer">
-                            <img
+                            <Image
                                 src="/IMG_1426.jpg"
                                 alt="Gallery Image 2"
+                                width={1200}
+                                height={800}
                                 className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
@@ -110,9 +115,11 @@ export default function GalleryPage() {
                         transition={{ duration: 1.3 }}
                     >
                         <div className="relative w-full overflow-hidden group cursor-pointer">
-                            <img
+                            <Image
                                 src="/IMG_4532.jpg"
                                 alt="Gallery Image 3"
+                                width={1200}
+                                height={800}
                                 className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
@@ -133,9 +140,11 @@ export default function GalleryPage() {
                         transition={{ duration: 1.3 }}
                     >
                         <div className="relative w-full overflow-hidden group cursor-pointer">
-                            <img
+                            <Image
                                 src="/IMG_5044.jpg"
                                 alt="Gallery Image 4"
+                                width={1200}
+                                height={800}
                                 className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
@@ -156,9 +165,11 @@ export default function GalleryPage() {
                         transition={{ duration: 1.3 }}
                     >
                         <div className="relative w-full overflow-hidden group cursor-pointer">
-                            <img
+                            <Image
                                 src="/IMG_7633.jpg"
                                 alt="Gallery Image 5"
+                                width={1200}
+                                height={800}
                                 className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>

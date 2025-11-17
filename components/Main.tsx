@@ -72,7 +72,7 @@ export default function Main() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
-                <h1 className="text-base sm:text-3xl md:text-4xl font-bold text-white text-center sm:text-left">Dairou Wang's Portfolio</h1>
+                <h1 className="text-base sm:text-3xl md:text-4xl font-bold text-white text-center sm:text-left">Dairou Wang&apos;s Portfolio</h1>
             </motion.div>
             
             {/* Animated marquee */}

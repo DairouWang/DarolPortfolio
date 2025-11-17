@@ -16,7 +16,7 @@ export default function MindReaderPage() {
             >
                 <div className="w-full px-4 sm:px-5 py-3 sm:py-4 flex justify-between items-center">
                     <Link href="/" className="text-lg sm:text-xl font-bold text-black hover:text-[#f6ad56] transition-colors duration-300">
-                        Dairou Wang's Portfolio
+                        Dairou Wang&apos;s Portfolio
                     </Link>
                     <Link 
                         href="/#works" 
